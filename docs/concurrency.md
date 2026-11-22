@@ -46,7 +46,7 @@ When someone tries to save a change, the database asks one simple question: **"I
 
 ### 2. Pessimistic Concurrency
 
-<img src="PASTE_PESSIMISTIC_CONCURRENCY_IMAGE_URL_HERE" alt="Pessimistic Concurrency Control" width="600" />
+![Http Request_20261122_192128_0000.png](https://github.com/user-attachments/assets/bbdd5c02-b0d8-439a-91fb-ddd89bdd9e48)
 
 Assumes conflicts are **likely**, so the database **locks the row** the moment Admin A starts editing. Admin B is forced to wait until Admin A saves and releases the lock.
 
