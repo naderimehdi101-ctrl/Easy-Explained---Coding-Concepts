@@ -16,7 +16,7 @@ Both open the plan's pricing sheet simultaneously. Admin A decides to run a disc
 
 In a backend API, this is called a **Lost Update**.
 
-<img src="PASTE_NO_CONCURRENCY_IMAGE_URL_HERE" alt="No Concurrency Control - Lost Update" width="600" />
+![Http Request_20261122_184423_0000.png](https://github.com/user-attachments/assets/27263453-b38c-4ae9-a350-52e7d5e00d84)
 
 When two requests read the same database row at the same time and both try to save changes, the last write silently wins—overwriting the first user's update.
 
