@@ -17,7 +17,7 @@ Each topic follows the same straightforward flow so you can grasp it in a few mi
 
 ## 📚 Table of Contents
 
-[Rate Limiting](./rate-limiting.md)
+[Rate Limiting](./Rate-Limiting.md)
 
 
 ---
