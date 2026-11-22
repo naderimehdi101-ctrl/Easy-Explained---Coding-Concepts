@@ -31,7 +31,7 @@ Common places this breaks real apps:
 
 ### 1. Optimistic Concurrency
 
-<img src="PASTE_OPTIMISTIC_CONCURRENCY_IMAGE_URL_HERE" alt="Optimistic Concurrency Control" width="600" />
+![Http Request_20261122_190748_0000.png](https://github.com/user-attachments/assets/48dfbe65-e087-444d-ae1a-65052a023582)
 
 Nobody gets locked out. Instead, every piece of data has a **version number** (like `v1`).
 
