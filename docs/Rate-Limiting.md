@@ -42,7 +42,7 @@ Time is split into rigid, fixed intervals (like `0:00–1:00`, `1:00–2:00`). E
 
 ### 2. Sliding Window
 
-![Sliding Window Rate Limiting](./sliding-window.png)
+![Http Request_20261122_151729_0000.png](https://github.com/user-attachments/assets/d9fd1aa1-6a03-4437-9032-2730f42a4272)
 
 Instead of resetting on the clock, the server checks: **"How many requests did this client send in the last 60 seconds from right now?"**
 
