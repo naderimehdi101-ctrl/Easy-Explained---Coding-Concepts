@@ -26,7 +26,7 @@ Each topic follows the same straightforward flow so you can grasp it in a few mi
 
 ## 🎯 Why This Repo Exists
 
-The best way to truly understand a concept is to explain it simply. This repo is my living visual study notebook—turning backend topics I build with in real projects into quick, scannable references anyone can learn from.
+The best way to truly understand a concept is to explain it simply. This repo is my living visual study notebook—turning backend topics I build with in my real projects into quick, scannable references anyone can learn from.
 
 ---
 
