@@ -33,14 +33,14 @@ Common places this breaks real apps:
 
 <img src="PASTE_OPTIMISTIC_CONCURRENCY_IMAGE_URL_HERE" alt="Optimistic Concurrency Control" width="600" />
 
-Assumes conflicts are **rare**, so it **doesn't lock** the database. Instead, every row carries a **version tag** (like a number, timestamp, or GUID).
+Nobody gets locked out. Instead, every piece of data has a **version number** (like `v1`).
 
-When saving, the database checks: *"Is the version still the same as when this user read it?"*
-- **Same version:** Save succeeds, and the version updates (`v1` → `v2`).
-- **Different version:** Someone else edited it first. The save is rejected, and the API returns **`409 Conflict`** so the user can reload and retry.
+When someone tries to save a change, the database asks one simple question: **"Is this still `v1`?"**
+- **Yes (`v1`):** Save goes through, and the version bumps to `v2`.
+- **No (it's already `v2`):** Someone else beat you to it. The save is blocked with **`409 Conflict`**, so you just refresh and try again.
 
-- **Pros:** Fast, no blocking, great for web APIs with lots of reads.
-- **Cons:** Users occasionally have to retry if a conflict happens.
+- **Pros:** Super fast—no waiting in line.
+- **Cons:** If two people edit at the exact same second, the second person has to retry.
 
 ---
 
