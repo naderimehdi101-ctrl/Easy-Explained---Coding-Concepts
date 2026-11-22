@@ -30,7 +30,8 @@ In practice, APIs usually track limits **per User ID** (for logged-in users) or 
 
 ### 1. Fixed Window
 
-![fixedwindow.png](https://github.com/user-attachments/assets/59a198d0-6873-49eb-9e40-4c1744497145)
+<img src="https://github.com/user-attachments/assets/59a198d0-6873-49eb-9e40-4c1744497145" alt="Fixed Window Rate Limiting" width="600" />
+
 
 Time is split into rigid, fixed intervals (like `0:00–1:00`, `1:00–2:00`). Every time the clock hits the next minute, the counter resets to zero.
 
