@@ -1,6 +1,6 @@
 # Rate Limiting
 
-Rate limiting is a way to control how many requests a user or client can send to a server within a specific time window.
+**Rate limiting** is a way to control how many requests a **user** or **client** can send to a server within a specific time window.
 
 ---
 
